@@ -8,11 +8,13 @@ public class RandomNumberGuessGame {
 
         int guess;
         int attempts = 0;
-        int randomNumber = random.nextInt(1,30);
+        int min = 1;
+        int max = 100;
+        int randomNumber = random.nextInt(min,max + 1);
 
 
         System.out.println("Number Guessing Game");
-        System.out.println("Guess a number btw 1-10: ");
+        System.out.printf("Guess a number btw %d-%d\n",min,max);
 
         do{
             System.out.print("Enter a guess: ");
